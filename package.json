@@ -1,0 +1,62 @@
+{
+    "name": "react-bnb-calendar",
+    "version": "1.0.0",
+    "description": "A modern, lightweight Airbnb-style date range calendar with daily pricing and minimum stay tooltip.",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/allenyan27/react-bnb-calendar.git"
+    },
+    "bugs": {
+        "url": "https://github.com/allenyan27/react-bnb-calendar/issues"
+    },
+    "homepage": "https://github.com/allenyan27/react-bnb-calendar#readme",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsup && tsc --emitDeclarationOnly --outDir dist",
+        "prepublishOnly": "pnpm build"
+    },
+    "keywords": [
+        "react",
+        "calendar",
+        "date-picker",
+        "date-range",
+        "bnb",
+        "booking",
+        "airbnb-style",
+        "rental",
+        "hotel"
+    ],
+    "author": "Nama Anda",
+    "license": "MIT",
+    "dependencies": {
+        "react-day-picker": "^10.0.1"
+    },
+    "devDependencies": {
+        "@types/react": "^19.2.18",
+        "@types/react-dom": "^19.2.4",
+        "esbuild-plugin-css-modules": "^0.3.0",
+        "esbuild-plugin-sass": "^1.0.1",
+        "esbuild-sass-plugin": "^3.7.0",
+        "react": "^19.2.8",
+        "react-dom": "^19.2.8",
+        "sass": "^1.102.0",
+        "tsup": "^8.5.1",
+        "typescript": "^7.0.2"
+    },
+    "sideEffects": false,
+    "packageManager": "pnpm@11.20.0+sha512.9a6f330a95b66446ea088faf1521405a8a01f07fde7124cc9958dfed52d4bb436737e65b08f85f37b46fcba375092558ac51262b816844b22f63406ed166bfee"
+}
