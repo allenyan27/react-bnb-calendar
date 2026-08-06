@@ -9,6 +9,8 @@ export default defineConfig({
     sourcemap: true,
     clean: true,
     injectStyle: false,
+    // Tambahkan ini agar React TIDAK dibundel ke dalam file output
+    external: ["react", "react-dom"],
     esbuildPlugins: [sassPlugin()],
     banner: {
         js: '"use client";',

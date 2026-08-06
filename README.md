@@ -24,13 +24,13 @@ Install `react-bnb-calendar` and its peer dependencies via your package manager 
 
 ```bash
 # pnpm
-pnpm add react-bnb-calendar react-day-picker
+pnpm add react-bnb-calendar@latest react-day-picker
 
 # npm
-npm install react-bnb-calendar react-day-picker
+npm install react-bnb-calendar@latest react-day-picker
 
 # yarn
-yarn add react-bnb-calendar react-day-picker
+yarn add react-bnb-calendar@latest react-day-picker
 ```
 
 ---
@@ -46,6 +46,8 @@ import type { DateRange } from "react-day-picker";
 
 // Import compiled CSS styles
 import "react-bnb-calendar/dist/index.css";
+// OR
+import "react-bnb-calendar/style.css";
 
 const sampleDatesData: DateEntry[] = [
   {
