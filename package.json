@@ -1,6 +1,6 @@
 {
     "name": "react-bnb-calendar",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A modern, lightweight Airbnb-style date range calendar with daily pricing and minimum stay tooltip.",
     "main": "./dist/index.js",
     "module": "./dist/index.mjs",

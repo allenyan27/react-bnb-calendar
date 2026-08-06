@@ -33,8 +33,11 @@ export interface DateRangeCalendarProps {
 
     /**
      * Callback function triggered when the user selects or changes dates.
+     *
+     * @param range - The newly formed date range containing the `from` and `to` dates, or `undefined` if the selection is cleared.
+     * @param triggerDate - The specific date that the user clicked/interacted with to trigger this event.
      */
-    onChange?: (range: DateRange | undefined) => void;
+    onChange?: (range: DateRange | undefined, triggerDate: Date) => void;
 
     /**
      * Selection mode of the calendar.
@@ -146,7 +149,9 @@ export const DateRangeCalendar = ({
         <Calendar
             mode={mode as any}
             selected={value}
-            onSelect={onChange as any}
+            onSelect={(range: DateRange, triggerDate: Date) =>
+                onChange?.(range as any, triggerDate)
+            }
             disabled={disabledDays}
             startMonth={todayDate}
             defaultMonth={value?.from}
