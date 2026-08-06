@@ -8,7 +8,7 @@ export default defineConfig({
     splitting: false,
     sourcemap: true,
     clean: true,
-    injectStyle: true,
+    injectStyle: false,
     esbuildPlugins: [sassPlugin()],
     banner: {
         js: '"use client";',
